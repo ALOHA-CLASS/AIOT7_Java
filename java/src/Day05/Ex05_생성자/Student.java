@@ -12,15 +12,26 @@ public class Student {
 
     // 기본 생성자
     public Student() {
-        this.name = "이름없음";
-        this.age = 0;
-        this.stdNo = "00000000";
-        this.major = "전공없음";
+        this("이름없음", 0);
+        // this.name = "이름없음";
+        // this.age = 0;
+        // this.stdNo = "00000000";
+        // this.major = "전공없음";
     }
 
+    // 매개변수가 있는 생성자
     public Student(String name, int age) {
+        this(name, age, "00000000", "전공없음");
+        // this.name = name;
+        // this.age = age;
+    }
+
+    // 모든 매개변수가 있는 생성자
+    public Student(String name, int age, String stdNo, String major) {
         this.name = name;
         this.age = age;
+        this.stdNo = stdNo;
+        this.major = major;
     }
 
 
@@ -37,6 +48,26 @@ public class Student {
     public double getAverage(int score1, int score2) {
         double average = 0.0;
         average = (double) (score1 + score2) / 2;
+        return average;
+    }
+    // 메소드 오버로딩
+    public double getAverage(int score1, int score2, int score3) {
+        double average = 0.0;
+        average = (double) (score1 + score2 + score3) / 3;
+        return average;
+    }
+
+    public double getAverage(int[] scores) {
+        double average = 0.0;
+        int sum = 0;
+
+        // 합계
+        // 최종합계 = 이전합계 + 배열요소
+        for (int i : scores) {
+            sum += i;
+        }
+        // 평균 = 합계 / 개수
+        average = (double) sum / scores.length;
         return average;
     }
 }
