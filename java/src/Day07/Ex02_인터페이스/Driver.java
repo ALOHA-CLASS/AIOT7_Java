@@ -16,7 +16,7 @@ public class Driver {
 		System.out.println();
 		
 		// static 메소드는 객체 생성 없이도 바로 호출 가능
-		RemoteControl.changeBattery();   // 배터리 교체\
+		RemoteControl.changeBattery();   // 배터리 교체
 		System.out.println();
 		
 		// 드론
