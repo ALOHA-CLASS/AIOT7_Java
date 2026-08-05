@@ -16,25 +16,34 @@ public class ArrayList반복 {
 			cart.add(product);
 		}
 		
-		// TODO : 반복1 - for
-		
+		// 반복1 - for
+		for (int i = 0; i < cart.size(); i++) {
+			System.out.print(cart.get(i) + " ");
+		}
 		System.out.println();
 		System.out.println("-----------------------------");
 		
-		// TODO : 반복2 - foreach
-
+		// 반복2 - foreach
+		for (String product : cart) {
+			System.out.print(product + " ");
+		}
 		System.out.println();
 		System.out.println("-----------------------------");
 		
-		// TODO : 반복3 - Iterator (for)
-		// * for : ctrl + space 1번 옵션
-
-
+		// 반복3 - Iterator (for)
+		for ( Iterator iterator = cart.iterator() ;  iterator.hasNext() ; ) {
+			String product = (String) iterator.next();
+			System.out.print(product + " ");
+		}
 		System.out.println();
 		System.out.println("-----------------------------");
 		
-		// TODO : 반복4 - Iterator (while)
-
+		// 반복4 - Iterator (while)
+		Iterator<String> it = cart.iterator();
+		while (it.hasNext()) {
+			String product = (String) it.next();
+			System.out.print(product + " ");
+		}
 		System.out.println();
 		System.out.println("-----------------------------");
 		

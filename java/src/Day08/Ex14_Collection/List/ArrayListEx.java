@@ -6,10 +6,14 @@ public class ArrayListEx {
 	
 	public static void main(String[] args) {
 		// ArrayList 생성 - 쇼핑 카트 (장바구니)
-		// TODO: String 타입의 ArrayList 객체 shoppingCart 생성하기
+		// String 타입의 ArrayList 객체 shoppingCart 생성하기
+		ArrayList<String> shoppingCart = new ArrayList<String>();
 		
 		// 요소 추가
-		// TODO: 요소 3개 추가하기
+		// 요소 3개 추가하기
+		shoppingCart.add("초밥");
+		shoppingCart.add("애플워치");
+		shoppingCart.add("명란바게트");
 		
 		
 		// 반복 출력

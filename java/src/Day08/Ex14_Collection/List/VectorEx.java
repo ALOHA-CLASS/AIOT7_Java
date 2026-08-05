@@ -8,24 +8,31 @@ public class VectorEx {
 	public static void main(String[] args) {
 		// Vector 생성
 		// - 학생 목록
-		// TODO: String 타입의 Vector 객체 students 생성하기
+		// String 타입의 Vector 객체 students 생성하기
+		Vector<String> students = new Vector<String>();
 		
 		// 요소 추가 - add()
-		// TODO: 요소 5개 추가하기
+		// 요소 5개 추가하기
+		students.add("원이");
+		students.add("미나미");
+		students.add("제나");
+		students.add("메이");
+		students.add("리브");
+
 		
 		System.out.println("::::: 학생 목록 :::::");
 		System.out.println(students);
 		System.out.println("------------------");
 		
 		// 요소 제거 - remove()
-		// TODO: 객체 요소(인스턴스)로 제거, 객체 요소(인스턴스)로 제거
+		// 객체 요소(인스턴스)로 제거, index 로 제거
+		students.remove("원이");
+		students.remove(1);
 
-
-		
 		// 요소 접근
 		String firstStudent = students.firstElement();
 		String secondStudent = students.get(1);
-		String lastStudent = students.getLast();
+		String lastStudent = students.lastElement();
 		
 		System.out.println("첫 번째 학생 : " + firstStudent);
 		System.out.println("두 번째 학생 : " + secondStudent);
@@ -43,9 +50,9 @@ public class VectorEx {
 		
 		// 요소 전체 추가 - addAll()
 		Vector<String> 야근반 = new Vector<String>();
-		야근반.add("");
-		야근반.add("");
-		야근반.add("");
+		야근반.add("황선진");
+		야근반.add("심예은");
+		야근반.add("오재석");
 		students.addAll(야근반);
 		
 		System.out.println("::::: 요소 전체 추가 :::::");
@@ -62,7 +69,7 @@ public class VectorEx {
 		
 		// 다른 컬렉션을 인자로 생성할 수 있다.
 		Vector<String> 오전반 = new Vector<String>(야근반);
-		오전반.add("");
+		오전반.add("김대우");
 		for (String student : 오전반) {
 			System.out.print(student + " ");
 		}

@@ -11,16 +11,22 @@ public class StackEx {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String input = sc.nextLine();
-		// TODO : Stack 생성하고 문자 뒤집기
-		
+		// Stack 생성하고 문자 뒤집기
+		Stack<Character> stack = new Stack<>();
 		
 		// 문자열의 각 문자를 스택에 넣기 - push
+		char[] charList = input.toCharArray();
+		for (char ch : charList) {
+			stack.push(ch);
+		}
 		
 		System.out.println("원래 문자열 : " + input);
 		System.out.print("뒤집힌 문자열 : ");
 		
 		// 스택에서 하나씩 꺼내며 출력 - pop
-		
+		while ( !stack.isEmpty() ) {
+			System.out.print( stack.pop() );
+		}
 		
 		sc.close();
 	}

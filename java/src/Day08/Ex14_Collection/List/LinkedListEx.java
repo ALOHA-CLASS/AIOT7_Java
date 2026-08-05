@@ -18,9 +18,28 @@ public class LinkedListEx {
 	public static void main(String[] args) {
 		// LinkedList 생성 - 상품 목록
 		LinkedList<Product> products = new LinkedList<>();
-		// TODO : Product 객체 3개 생성하여 추가하기
+		// Product 객체 3개 생성하여 추가하기
+		Product product1 = new Product.ProductBuilder()
+									  .name("피벗 모니터")
+									  .price(25000)
+									  .count(1)
+									  .build();
 
-		
+		Product product2 = new Product.ProductBuilder()
+									  .name("기계식 키보드")
+									  .price(30000)
+									  .count(19)
+									  .build();
+
+		Product product3 = new Product.ProductBuilder()
+									  .name("손 선풍기")
+									  .price(15000)
+									  .count(11)
+									  .build();
+
+		products.add(product1);
+		products.add(product2);
+		products.add(product3);
 		
 		
 		// 첫 번째/마지막 요소 가져오기
