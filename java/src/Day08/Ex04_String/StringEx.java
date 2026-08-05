@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class StringEx {
 	
 	public static void main(String[] args) {
-		String str1 = " TheJoEun Academy ";
-		String str2 = " theJoEun Academy ";
+		String str1 = " DW Academy ";
+		String str2 = " dW Academy ";
 		
 		System.out.println( str1.charAt(2) );					// index 에 있는 문자 추출
 		System.out.println( str1.concat(str2) );				// 문자열 연결
@@ -17,8 +17,8 @@ public class StringEx {
 		System.out.println( str1.lastIndexOf("e") ); 			// 해당 문자의 마지막 index 반환, 없으면 -1
 		System.out.println( str1.trim() ); 						// 문자열 양쪽 공백 제거
 		System.out.println( str1.length() ); 					// 문자열 길이 (글자수)[공백포함]
-		System.out.println( str1.substring(10) ); 				// index 앞의 문자열을 자르고, 뒤의 문자열 반환
-		System.out.println( str1.substring(10, 17) ); 			// index~(index2-1) 까지 반환
+		System.out.println( str1.substring(4) ); 				// index 앞의 문자열을 자르고, 뒤의 문자열 반환
+		System.out.println( str1.substring(4, 11) ); 			// index~(index2-1) 까지 반환
 																// index 10번째 부터 16번째 까지의 문자열을 가져온다.
 																// Academy
 																// [10]~[16]

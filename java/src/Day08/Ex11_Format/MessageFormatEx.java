@@ -13,13 +13,16 @@ public class MessageFormatEx {
 		//   \n : 한 줄 개행(엔터)
 		//   \t : 탭
 		
-		String text= "아이디 : {0}\n비밀번호 : {1}";
+		String text= "아이디 : {0}\n비밀번호 : {1}\nMBTI : {2}";
 		Scanner sc = new Scanner(System.in);
 		System.out.print("아이디 : ");
 		String id = sc.nextLine();
 		System.out.print("비밀번호 : ");
 		String pw = sc.nextLine();
-		String login = MessageFormat.format(text, id, pw);
+		System.out.print("MBTI : ");
+		String mbti = sc.nextLine();
+
+		String login = MessageFormat.format(text, id, pw, mbti);
 		// * ... : 가변 매개변수
 		// 가변 매개변수는 매개변수의 개수를 변화시키면서 사용할 수 있도록 해주는 기호
 		// 전달 받는 메소드에서는 가변 매개변수를 하나의 배열로 전달받는다.
@@ -29,7 +32,7 @@ public class MessageFormatEx {
 		System.out.println(login);
 		System.out.println();
 		
-		String[] studentInfo = {"김조은", "25학번", "컴퓨터공학과", "20살"};
+		String[] studentInfo = {"김대우", "26학번", "컴퓨터공학과", "20살"};
 		String studentFormat = "이름 : {0} \n"
 						     + "학번 : {1} \n"	
 						     + "전공 : {2} \n"	

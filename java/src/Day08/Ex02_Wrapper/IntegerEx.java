@@ -9,7 +9,7 @@ public class IntegerEx {
 		// : 정수 타입인 int 기본 타입을 객체화한 클래스
 		int a = 10;
 		Integer A = 100;
-//		Integer B = new Integer(100);
+		// Integer B = new Integer(100);
 		
 		// * 주요 메소드
 		// (문자열) 	--> (정수)
@@ -29,7 +29,7 @@ public class IntegerEx {
 		// * 오토 박싱(Auto Boxing)
 		// : 자바 5버전 부터는 객체를 생성하여 사용하지 않아도 자동으로 객체를 감싸준다.
 		Integer i = 10;						// 박싱 (오토 박싱)
-		int value = i.intValue();			// 언박싱
+		int value = i.intValue();			// 언 박싱
 		// * 오토 언박싱(Auto UnBoxing)
 		// : Wrapper 클래스 객체의 값을 자동으로 꺼내서 해당 기본 타입에 대입해준다.
 		int value2 = i;						// 언박싱 (오토 언박싱)

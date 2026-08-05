@@ -26,7 +26,7 @@ public class SimpleDateFormatEx {
 		SimpleDateFormat sdf  = new SimpleDateFormat();
 		System.out.println( sdf.format(now) );
 		
-		String day = "2025/10/29";
+		String day = "2026/08/05";
 		// (String) -> (Date)
 		// 지정한 날짜형식으로 문자열 날짜를 분석하여 Date 객체 생성
 		// "2025/03/21" --> Date

@@ -30,7 +30,7 @@ public class CharacterEx {
 		}
 		
 		// 아래 문자열에서 대문자가 몇 개인지 세어보자.
-		String str = "Hello The Joeun Academy";
+		String str = "Hello DW Academy";
 		
 		char[] arr = str.toCharArray();			// 문자열을 한 글자씩 char[] 배열로 변환
 		

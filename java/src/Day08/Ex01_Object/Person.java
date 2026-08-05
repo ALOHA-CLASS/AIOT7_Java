@@ -1,6 +1,8 @@
 package Day08.Ex01_Object;
 
+// Cloneable 인터페이스를 구현해야 clone()을 사용할 수 있다.
 class Person implements Cloneable {
+    // 사람의 이름(name) 과 나이(age) 를 저장하는 변수
     private String name;
     private int age;
 
@@ -13,6 +15,7 @@ class Person implements Cloneable {
     @Override
     public String toString() {
         return "Person{name='" + name + "', age=" + age + "}";
+        // Person{name='Aloha', age=25}
     }
 
     // equals() 재정의

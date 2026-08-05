@@ -10,12 +10,12 @@ public class LocalDateTimeEx {
 		// LocalDateTime
 		// : 날짜와 시간을 다루는 클래스로 타임존을 포함하지 않고 시스템의 날짜/시간을 표현합니다.
 		
-		// 2025년 3월 21일 16시 0분 0초
-		LocalDateTime todayDateTime = LocalDateTime.of(2025, 10, 28, 13, 0, 0);
+		// 2026년 8월 5일 14시 0분 0초
+		LocalDateTime todayDateTime = LocalDateTime.of(2026, 8, 5, 14, 0, 0);
 		System.out.println("오늘 : " + todayDateTime);
 		
-		// 2025년 9월 16일 18시 20분 0초
-		LocalDateTime endDateTime = LocalDateTime.of(2026, 4, 20, 18, 20, 0);
+		// 2027년 2월 22일 17시 30분 0초
+		LocalDateTime endDateTime = LocalDateTime.of(2027, 2, 22, 17, 30, 0);
 		System.out.println("종강 : " + endDateTime);
 		
 		// A.isBefore(B) 			: A가 B보다 이전이면, true 아니면 false
