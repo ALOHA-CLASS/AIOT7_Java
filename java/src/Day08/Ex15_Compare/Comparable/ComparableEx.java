@@ -20,22 +20,32 @@ class Person implements Comparable<Person> {
 	 * return
 	 * 		양수(1)		: 해당객체 > 비교객체
 	 * 		0			: 해당객체 = 비교객체
-	 * 		음수(-1)		: 해당객체 < 비교객체
+	 * 		음수(-1)	: 해당객체 < 비교객체
 	 */
 	@Override
 	public int compareTo(Person o) {
 		// * 나이순으로 오름차순 정렬
 		int thisAge = this.getAge();	// 해당객체의 나이
 		int comAge = o.getAge();		// 비교객체의 나이
-		// TODO : 나이순 방법1
+		// 나이순 방법1
+		// if( thisAge > comAge)
+		// 	return 1;
+		// else if( thisAge < comAge )
+		// 	return -1;
+		// else
+		// 	return 0;
 
-		// TODO : 나이순 방법2
+		// 나이순 방법2
+		// return thisAge - comAge;
 
 		// ---------------------------------------------------------------
 
 		// * 이름순으로 오름차순 정렬
-		// TODO : 이름순
-		
+		// 이름순
+		String thisName = this.getName();
+		String comName = o.getName();
+		int result = thisName.compareTo(comName);
+		return result;
 		// 해당문자열.compareTo(비교문자열)
 		// : 해당 문자열이 사전순으로 더 뒤에 나오면 +
 		//   해당 문자열이 사전순으로 더 앞에 나오면 -
@@ -49,7 +59,12 @@ public class ComparableEx {
 	
 	public static void main(String[] args) {
 		List<Person> personList = new LinkedList<Person>();
-		// TODO: 요소 추가!
+		// 요소 추가!
+		personList.add( new Person("원이", 22) );
+		personList.add( new Person("미나미", 19) );
+		personList.add( new Person("제나", 19) );
+		personList.add( new Person("메이", 17) );
+		personList.add( new Person("리브", 17) );
 		
 		// 정렬 전
 		System.out.println("정렬 전");
@@ -60,7 +75,8 @@ public class ComparableEx {
 		
 		// 정렬
 		// * Person 클래스에 구현한 compareTo() 메소드에 비교기준에 따라 정렬된다.
-		// TODO : 정렬
+		// 정렬
+		Collections.sort( personList );
 		
 		
 		// 정렬 후
