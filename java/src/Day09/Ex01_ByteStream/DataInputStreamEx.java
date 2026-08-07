@@ -12,11 +12,11 @@ public class DataInputStreamEx {
 		String filePath = "sample.dat";
 		
 		try(
-			// 파일을 byte 단위로 출력
+			// 파일을 byte 단위로 입력
 			FileInputStream fis = new FileInputStream(filePath);
 			// 파일 입력 성능 향상
 			BufferedInputStream bis = new BufferedInputStream(fis);
-			// 기본 데이터 타입을 출력
+			// 기본 데이터 타입을 입력
 			DataInputStream dis = new DataInputStream(bis);
 		) 
 		{

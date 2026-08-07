@@ -92,7 +92,7 @@ public class FileManager {
 	private static void makeDir(String path) {
 		File file = new File(path);
 		// mkdir() 	: 생성할 경로의 상위 경로까지 기존 디렉토리가 존재해야한다. (없으면 에러)
-		// mkdirs()	: 생성할 경로의 사우이 경로까지 디렉토리를 생성해준다.
+		// mkdirs()	: 생성할 경로의 상위 경로까지 디렉토리를 생성해준다.
 		if( file.mkdirs() ) {
 			System.out.println("디렉토리 생성 성공!");
 		} else {

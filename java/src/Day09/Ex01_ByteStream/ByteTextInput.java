@@ -14,7 +14,7 @@ public class ByteTextInput {
 		// 파일에서 읽은 데이터를 임시로 저장할 바이트 배열 생성
 		// 1024바이트 1KB 크기로 지정
 		try {
-			FileInputStream fis = new FileInputStream("./src/day11/Test.txt");
+			FileInputStream fis = new FileInputStream("./src/Day09/Test.txt");
 			int byteText = fis.read(data);	// 바이트 배열에 데이터 입력
 			if( byteText != -1 ) {
 				// 바이트 배열 data 를 인덱스 0부터 마지막 바이트까지(byteText)까지
