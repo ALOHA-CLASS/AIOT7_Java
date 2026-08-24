@@ -1,0 +1,71 @@
+# 게시판 프로그램 만들기
+
+## 오라클 연결 확인
+1. ojdbc11.jar 드라이버 찾기
+    - [오라클홈]\jdbc\lib
+    - ~\WINDOWS.X64_213000_db_home\jdbc\lib
+2. 자바 프로젝트 생성
+    - 프로젝트 타입 : NO BUILD TOOLS
+    - 프로젝트 명   : board-oracle
+3. 라이브러리 추가하기
+    - lib 폴더에 ojdbc11.jar 파일을 복사한다.
+4. 라이브러리 확인하기
+    - Java Projects 를 열어서 Referecned Library 에 있는지 확인
+    - 없으면 [+] 눌러서 추가해준다.
+5. 데이터베이스 접속 확인
+    - JDBConnection.java 파일에서 접속정보를 수정한다.
+        * 호스트 : localhost
+        * 포트 : 1521
+        * SID : orcl
+        * 아이디 : aloha
+        * 비밀번호 : 123456
+    - 연결성공! 메시지 확인
+
+
+## 프로젝트 파일 구조
+1. 패키지 생성
+    - DTO
+    - DAO
+    - Service
+2. 클래스 파일 생성
+    - DTO/Board.java
+    - DAO/BoardDAO.java
+    - Service
+        - BoardService.java         (인터페이스)
+        - BoardServiceImpl.java
+    - Main.java
+
+
+## 라이브러리 추가
+- lombok.jar 
+
+
+## DB 테이블 및 시퀀스 생성
+- board 테이블 생성
+- BOARD_SEQ 시퀀스 생성
+
+## DAO 데이터 접근 객체 정의
+* BoardDAO.java
+1. 목록, 단일 조회 메소드 - list(), select()
+2. 등록 메소드 - insert()
+3. 수정 메소드 - update()
+4. 삭제 메소드 - delete()
+
+* 주요 작업 내용
+- DB에 요청할 SQL 코드 작성
+- SQL 요청 메소드 호출
+- 결과 확인 
+
+* JDBConnection 클래스를 상속하여 연결 객체들을 재사용한다.
+
+## Service 로직 작성
+- BoardService 인터페이스에 기능별로 추상 메소드 정의
+- BoardServiceImpl 구현 클래스에서 BoardService 인터페이스를 구현
+- 인터페이스의 모든 추상메소드를 오버라이딩해서 로직 작성
+* 정의할 기능 메소드
+    - 목록
+    - 조회
+    - 등록
+    - 수정
+    - 삭제
+
