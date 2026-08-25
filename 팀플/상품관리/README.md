@@ -5,6 +5,13 @@
     - 팀 대표 1명이 생성
 4. Github 팀원 초대
 5. 레포지토리 복제 - Git Clone
+    1. ctrl + shift + P ([보기] > [명령 팔레트])
+    2. Git Clone
+    3. Github 레포지토리
+        1) Code 초록색 버튼
+        2) URL 복사
+    4. URL 입력 (~~~~~.git)
+    5. 작업 폴더 선택 
 6. 시작 프로젝트 생성 후 업로드
     - 팀 대표 1명이 진행
     - Java Project 생성
@@ -25,9 +32,22 @@
     - yeeun
     - main
 10. 역할 분담 기능 개발 시작!
-11. 내가 완성한 코드 업로드 - git push
+11. 내가 완성한 코드 업로드 - git push 
+    1) 변경 사항 스테이징
+    2) 커밋
+    3) 푸시
 12. main 브랜치에 병합 - git merge
+    1) Github
+    2) Pull Request
+    3) New Pull Request
+    4) Create Pull Request > Merge Pull Request > Confirm Merge
 13. 다른 팀원이 작성한 코드 이어받기 - git pull & git merge
+    1) 내 변경 사항 커밋
+    2) main 브랜치로 전환
+    3) 풀
+    4) 내 브랜치로 전환
+    5) 분기 > 병합 > main
+
 14. 이어서 작업
 15. 최종 완성을 main 브랜치에 병합
 
