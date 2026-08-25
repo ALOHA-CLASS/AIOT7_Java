@@ -19,11 +19,20 @@ CREATE TABLE board (
     writer          VARCHAR2(100)   NOT NULL,
     content         CLOB,
     created_at      DATE    DEFAULT sysdate,
-    updated_up      DATE    DEFAULT sysdate
+    updated_at      DATE    DEFAULT sysdate
 );
 -- 글번호 시퀀스
+DROP SEQUENCE BOARD_SEQ;
 CREATE SEQUENCE BOARD_SEQ 
     START WITH 1
     INCREMENT BY 1
     NOCYCLE
     NOCACHE;
+
+
+TRUNCATE TABLE board;
+INSERT INTO board( no, title, writer, content)
+VALUES ( BOARD_SEQ.nextval, '한글', '한글', '한글');
+COMMIT;
+
+SELECT * FROM board;

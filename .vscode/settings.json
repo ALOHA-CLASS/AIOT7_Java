@@ -2,5 +2,7 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "java/lib/lombok.jar"
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "liveServer.settings.port": 5501
 }
